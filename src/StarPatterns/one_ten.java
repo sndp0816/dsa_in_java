@@ -4,6 +4,11 @@ public class one_ten {
     public static void main(String[] args) {
 
         //follow the StarPattern.pdf i attach to doct folder the file represent the graphical view
+        //or use the following link
+        // https://docs.google.com/document/d/1O4QIgCE-QbR70gFToLgc5xdhfeowHIqq7GYu8iRwOf4/edit?usp=sharing
+
+
+
         //calling the pattern function
         pattern10(5);
     }
