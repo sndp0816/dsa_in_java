@@ -90,7 +90,7 @@ public class reverse {
     }
 
     //swapping array elements
-    static void SwapElement(int[] arr,int n,int m){
+    public static void SwapElement(int[] arr,int n,int m){
         int temp = arr[n];
         arr[n]=arr[m];
         arr[m]=temp;
