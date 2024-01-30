@@ -96,7 +96,6 @@ public class reverse {
         arr[m]=temp;
     }
 
-    //moving the negative element to the one side of an array
 
 
 

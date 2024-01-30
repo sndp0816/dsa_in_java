@@ -1,5 +1,6 @@
 package Array;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class LoopsInArray {
@@ -61,14 +62,65 @@ public class LoopsInArray {
         return false;
     }
 
+    public static int SearchInString(String[] arr1,String name){
+        int temp=0;
+        for (String i:arr1) {
+            if(i.equals(name)){
+                break;
+            }
+            temp++;
+        }
+        //give the index of the String
+       return temp;
+    }
 
+    public static int[] RemovingZeroInArray(int[] arr){
+        ArrayList<Integer> nonNull = new ArrayList<>();
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i]!=0){
+                nonNull.add(arr[i]);
+            }
+        }
+        int[] result = nonNull.stream().mapToInt(Integer::intValue).toArray();
+        return result;
+
+    }
+
+    public static String[] RemovingNull(String[] arr){
+        ArrayList<String> nonNull = new ArrayList<>();
+        for (int i = 0; i < arr.length; i++) {
+            if(arr[i]!=null){
+                nonNull.add(arr[i]);
+            }
+        }
+        String[] result = nonNull.toArray(new String[nonNull.size()]);
+        return result;
+    }
 
     public static void main(String[] args) {
 
         int[] arr1= {1,2,3};
         int[] arr2={2,3,4};
 
-        System.out.println(Arrays.toString(Intersection(arr1,arr2)));
+        //System.out.println(Arrays.toString(Intersection(arr1,arr2)));
+
+
+        //search in Stirngs
+
+//        String[] cars = {"Volvo", "BMW", "Ford", "Mustang"};
+//        System.out.println(SearchInString(cars,"Mustang"));
+//        for (String i:cars) {
+//            System.out.println(i);
+//        }
+
+        int[] arr3 = {1,0,3,0,4,5,0};
+        System.out.println(Arrays.toString(RemovingZeroInArray(arr3)));
+
+        String[] name = {null,"sandeep","Ramesh",null,"mohit"};
+        System.out.println(Arrays.toString(RemovingNull(name)));
+
+
+
 
     }
 
