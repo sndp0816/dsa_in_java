@@ -22,7 +22,16 @@ public class ArrayListOperations {
         name.add("sandeep");
         name.add("amar");
         name.add("abhay");
-        System.out.println(name.getClass());
+
+//        String[] result = name.toArray(new String[name.size()]);
+//        System.out.println(Arrays.toString(result));
+
+        //printing the array String list
+
+//        for (String str:name) {
+//            System.out.print(str+" ");
+//        }
+
 
     }
 

@@ -113,9 +113,9 @@ public class LoopsInArray {
 //            System.out.println(i);
 //        }
 
-        int[] arr3 = {1,0,3,0,4,5,0};
-        System.out.println(Arrays.toString(RemovingZeroInArray(arr3)));
-
+//        int[] arr3 = {1,0,3,0,4,5,0};
+//        System.out.println(Arrays.toString(RemovingZeroInArray(arr3)));
+//
         String[] name = {null,"sandeep","Ramesh",null,"mohit"};
         System.out.println(Arrays.toString(RemovingNull(name)));
 

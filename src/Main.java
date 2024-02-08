@@ -16,6 +16,10 @@ public class Main {
         //for make everything crystal clear i will try to make separate file and folder as much as i can
         //so it's easy for me to check my code
     }
+
+
+
+
     static void checkPrime(int n){
         boolean flag=false;
         for (int i=2;i<=n/2; i++){
